@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed ElSerry | Video Editor Portfolio</title>
+
+    <!-- Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" type="image" href="assets/img/Logo.png">
+    <script src="https://kit.fontawesome.com/a86c46f320.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Custom Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <main>
+        <!-- Navigation -->
+        <nav id="nav-bar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <a href="#home"
+                        style="text-decoration: none; font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: #fff; letter-spacing: -1px;">
+                        El<span style="color: var(--primary-accent);">Serry</span>
+                    </a>
+                </div>
+
+                <div class="nav-items" id="nav-menu">
+                    <ul class="overview">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="mobile-toggle" id="mobile-toggle">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="first-sec" id="home">
+            <div class="container hero-section">
+                <div class="hero-text">
+                    <span class="section-tag" data-aos="fade-up">Professional Video Editor</span>
+                    <h1 data-aos="fade-up" data-aos-delay="200">
+                        Crafting <span class="highlight">Stories</span><br>
+                        Through Motion.
+                    </h1>
+                    <p class="hero-desc" data-aos="fade-up" data-aos-delay="400">
+                        Delivering cinematic video editing and color grading that brings your vision to life with
+                        precision and creativity.
+                    </p>
+                    <div data-aos="fade-up" data-aos-delay="600">
+                        <a class="btn-primary" href="#portfolio">
+                            View My Work <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="hero-image-container">
+                        <!-- Using portrait image -->
+                        <img src="assets/img/Hero.png" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-sec" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <div class="section-header">
+                            <span class="section-tag" data-aos="fade-right">The Editor</span>
+                            <h2 class="section-title" data-aos="fade-right" data-aos-delay="200">
+                                Creative Vision <br> Behind Every Frame.
+                            </h2>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="400">
+                            <p>
+                                I am <b>Mohammed ElSerry</b>, a professional video editor with over 3 years of
+                                experience
+                                in crafting compelling visual narratives. I specialize in cinematic storytelling and
+                                precise
+                                color grading that elevates content to the next level.
+                            </p>
+                            <p>
+                                My workflow combines industry-leading tools with creative expertise, using Premiere Pro
+                                for
+                                editing, After Effects for motion graphics, DaVinci Resolve for color grading, and
+                                Photoshop
+                                for visual refinements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="skills-grid" data-aos="fade-left" data-aos-delay="600">
+                        <div class="skill-item">
+                            <h4>Video Editing</h4>
+                            <span>Adobe Premiere Pro</span>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Motion Graphics</h4>
+                            <span>After Effects</span>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Color Grading</h4>
+                            <span>DaVinci Resolve</span>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Visual Editing</h4>
+                            <span>Adobe Photoshop</span>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Experience</h4>
+                            <span>3+ Years Professional</span>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Results</h4>
+                            <span>Client Focused & Detail Oriented</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-sec" id="portfolio">
+            <div class="container">
+                <div class="section-header" style="text-align: center;">
+                    <span class="section-tag" data-aos="fade-up">Portfolio</span>
+                    <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">Project Categories</h2>
+                    <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 1.1rem;" data-aos="fade-up"
+                        data-aos-delay="300">
+                        Explore my work organized by category
+                    </p>
+                </div>
+
+                <div class="category-cards">
+                    <!-- Coloring Category -->
+                    <a href="assets/projects/coloring.html" class="category-card" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <div class="category-card-image">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Coloring</h3>
+                            <p>Professional color grading and correction work</p>
+                            <span class="category-badge">7 Projects</span>
+                        </div>
+                    </a>
+
+                    <!-- Ai Category -->
+                    <a href="assets/projects/ai.html" class="category-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="category-card-image">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Ai</h3>
+                            <p>Artificial Intelligence videos</p>
+                            <span class="category-badge">4 Projects</span>
+                        </div>
+                    </a>
+
+                    <!-- Furniture Category -->
+                    <a href="assets/projects/furniture.html" class="category-card" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="category-card-image">
+                            <i class="fa-solid fa-couch"></i>
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Furniture</h3>
+                            <p>Product showcase and commercial videos</p>
+                            <span class="category-badge">10 Projects</span>
+                        </div>
+                    </a>
+
+
+                    <!-- Gaming Category -->
+                    <a href="assets/projects/gaming.html" class="category-card" data-aos="fade-up" data-aos-delay="250">
+                        <div class="category-card-image">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Gaming</h3>
+                            <p>Gaming content and montages</p>
+                            <span class="category-badge">1 Project</span>
+                        </div>
+                    </a>
+
+                    <!-- Real Estate Category -->
+                    <a href="assets/projects/realestate.html" class="category-card" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <div class="category-card-image">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Real Estate</h3>
+                            <p>Property tours and promotional videos</p>
+                            <span class="category-badge">2 Projects</span>
+                        </div>
+                    </a>
+
+                    <!-- Restaurants Category -->
+                    <a href="assets/projects/restaurants.html" class="category-card" data-aos="fade-up"
+                        data-aos-delay="350">
+                        <div class="category-card-image">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Restaurants</h3>
+                            <p>Food and restaurant promotional content</p>
+                            <span class="category-badge">12 Projects</span>
+                        </div>
+                    </a>
+
+                    <!-- Show Reel Category -->
+                    <!-- Cars Category -->
+                    <a href="assets/projects/cars.html" class="category-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="category-card-image">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Cars</h3>
+                            <p>Automotive videography and edits</p>
+                            <span class="category-badge">8 Projects</span>
+                        </div>
+                    </a>
+
+                    <!-- Social Media Category -->
+                    <a href="assets/projects/socialmedia.html" class="category-card" data-aos="fade-up"
+                        data-aos-delay="450">
+                        <div class="category-card-image">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Social Media</h3>
+                            <p>Content optimized for social platforms</p>
+                            <span class="category-badge">18 Projects</span>
+                        </div>
+                    </a>
+
+                    <!-- Sponsors Category -->
+                    <a href="assets/projects/sponsors.html" class="category-card" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="category-card-image">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Sponsors</h3>
+                            <p>Brand partnerships and sponsored content</p>
+                            <span class="category-badge">1 Project</span>
+                        </div>
+                    </a>
+
+                    <!-- VFX Category -->
+                    <a href="assets/projects/vfx.html" class="category-card" data-aos="fade-up" data-aos-delay="550">
+                        <div class="category-card-image">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div class="category-card-content">
+                            <h3>VFX</h3>
+                            <p>Visual effects and compositing work</p>
+                            <span class="category-badge">4 Projects</span>
+                        </div>
+                    </a>
+
+                    <!-- Typography Category -->
+                    <a href="assets/projects/typography.html" class="category-card" data-aos="fade-up"
+                        data-aos-delay="600">
+                        <div class="category-card-image">
+                            <i class="fa-solid fa-font"></i>
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Typography</h3>
+                            <p>Text animation and kinetic typography</p>
+                            <span class="category-badge">2 Projects</span>
+                        </div>
+                    </a>
+
+                    <!-- Motion Graphics Category -->
+                    <a href="assets/projects/motiongraphics.html" class="category-card" data-aos="fade-up"
+                        data-aos-delay="650">
+                        <div class="category-card-image">
+                            <i class="fa-solid fa-shapes"></i>
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Motion Graphics</h3>
+                            <p>Animated graphics and visual design</p>
+                            <span class="category-badge">7 Projects</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Google Drive Button -->
+                <div style="text-align: center;" data-aos="fade-up" data-aos-delay="700">
+                    <a href="https://drive.google.com/drive/folders/14LGXqqFvn9D0206b3ffIIEjGGSZdtJlu" target="_blank"
+                        class="drive-button">
+                        <i class="fa-brands fa-google-drive"></i>
+                        View Full Portfolio on Google Drive
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-sec" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="section-header">
+                            <span class="section-tag" data-aos="fade-right">Connect</span>
+                            <h2 class="section-title" data-aos="fade-right" data-aos-delay="200">Let's Create <br>
+                                Together.</h2>
+                        </div>
+
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                            <div>
+                                <h4>Call Me</h4>
+                                <p>+20 10 66855737</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Email Me</h4>
+                                <p>MohammedElserrry@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="600">
+                            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>New Damietta, Egypt</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form" data-aos="fade-left">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" placeholder="Project Details" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary"
+                                style="width: 100%; justify-content: center; border: none; cursor: pointer;">
+                                Send Signal <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                
+                <p>Professional video editor specializing in cinematic storytelling, color grading, and creative
+                    post-production.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://wa.me/+201066855737" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/elserry_films/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p class="dev-credit">Developed with love by <a href="http://hossamelbesh.github.io" target="_blank">Hossam
+                    Elbesh</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
