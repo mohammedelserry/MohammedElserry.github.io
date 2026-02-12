@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
         offset: 50
     });
 
+    // Initialize Video Thumbnails
+    enhanceVideoThumbnails();
+
     // Navigation Scroll Effect
     const nav = document.getElementById('nav-bar');
     window.addEventListener('scroll', () => {
@@ -209,6 +212,57 @@ document.addEventListener('DOMContentLoaded', () => {
                     icon.classList.remove('fa-expand');
                     icon.classList.add('fa-compress');
                 }
+            }
+        });
+    }
+
+    function enhanceVideoThumbnails() {
+        const videoItems = document.querySelectorAll('.video-item');
+        
+        videoItems.forEach(item => {
+            const iframe = item.querySelector('iframe');
+            if (!iframe) return;
+
+            const src = iframe.src;
+            // Extract file ID from Google Drive URL
+            // Format: https://drive.google.com/file/d/FILE_ID/preview
+            const idMatch = src.match(/\/d\/([a-zA-Z0-9_-]+)\//);
+            
+            if (idMatch && idMatch[1]) {
+                const fileId = idMatch[1];
+                const thumbnailUrl = `https://drive.google.com/thumbnail?id=${fileId}&sz=w1920`;
+
+                // Create facade container
+                const facade = document.createElement('div');
+                facade.className = 'video-facade';
+                facade.style.backgroundImage = `url('${thumbnailUrl}')`;
+                
+                // Add play button
+                const playBtn = document.createElement('div');
+                playBtn.className = 'play-button';
+                playBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+                facade.appendChild(playBtn);
+
+                // Store original SRC
+                facade.dataset.videoSrc = src;
+
+                // Replace iframe with facade
+                iframe.remove();
+                item.insertBefore(facade, item.firstChild);
+
+                // Add click event to load video
+                facade.addEventListener('click', () => {
+                    const newIframe = document.createElement('iframe');
+                    newIframe.src = facade.dataset.videoSrc + '?autoplay=1'; // Try enabling autoplay
+                    newIframe.allow = "autoplay; fullscreen";
+                    // allow="autoplay" is standard, but some browsers block it.
+                    
+                    // Insert iframe
+                    item.insertBefore(newIframe, facade);
+                    
+                    // Remove facade
+                    facade.remove();
+                });
             }
         });
     }
