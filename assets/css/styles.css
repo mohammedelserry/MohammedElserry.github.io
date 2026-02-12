@@ -804,6 +804,8 @@ nav {
 .info-item p {
   font-size: 1.2rem;
   font-weight: 600;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .contact-form {
@@ -1049,6 +1051,16 @@ footer {
 
   .contact-grid {
     gap: 3rem;
+  }
+
+  .contact-info .info-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .contact-info .section-header {
+    text-align: center;
   }
 
   .contact-form {
